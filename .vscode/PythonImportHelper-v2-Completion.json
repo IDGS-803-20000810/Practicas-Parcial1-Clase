@@ -1,0 +1,189 @@
+[
+    {
+        "label": "tema13_mi_modulo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tema13_mi_modulo",
+        "description": "tema13_mi_modulo",
+        "detail": "tema13_mi_modulo",
+        "documentation": {}
+    },
+    {
+        "label": "tem2",
+        "importPath": "tema13_mi_modulo",
+        "description": "tema13_mi_modulo",
+        "isExtraImport": true,
+        "detail": "tema13_mi_modulo",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "importPath": "tema7-LeerDatos",
+        "description": "tema7-LeerDatos",
+        "isExtraImport": true,
+        "detail": "tema7-LeerDatos",
+        "documentation": {}
+    },
+    {
+        "label": "tem",
+        "kind": 2,
+        "importPath": "tema13_mi_modulo",
+        "description": "tema13_mi_modulo",
+        "peekOfCode": "def tem():\n    print(\"Hola desde mi_modulo.py\")\ndef main():\n        print(\"Doy una funcion y hago algo\")\n        tem()\n        tem2()\ndef tem2():\n    print(\"Adios desde mi_modulo.py\")\ntem2()\ntem()",
+        "detail": "tema13_mi_modulo",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "tema13_mi_modulo",
+        "description": "tema13_mi_modulo",
+        "peekOfCode": "def main():\n        print(\"Doy una funcion y hago algo\")\n        tem()\n        tem2()\ndef tem2():\n    print(\"Adios desde mi_modulo.py\")\ntem2()\ntem()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "tema13_mi_modulo",
+        "documentation": {}
+    },
+    {
+        "label": "tem2",
+        "kind": 2,
+        "importPath": "tema13_mi_modulo",
+        "description": "tema13_mi_modulo",
+        "peekOfCode": "def tem2():\n    print(\"Adios desde mi_modulo.py\")\ntem2()\ntem()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "tema13_mi_modulo",
+        "documentation": {}
+    },
+    {
+        "label": "OperasBas",
+        "kind": 6,
+        "importPath": "tema14-clases",
+        "description": "tema14-clases",
+        "peekOfCode": "class OperasBas:\n    #declaracion de propiedades de clase\n    num1=0\n    num2=0\n    res=0\n    #declaracion de constructo\n    def __init__(self,a,b):\n        self.num1=a\n        self.num2=b\n    #declaracion de métodos de clase",
+        "detail": "tema14-clases",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "tema14-clases",
+        "description": "tema14-clases",
+        "peekOfCode": "def main():\n    obj=OperasBas(3,4)\n    obj.suma()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "tema14-clases",
+        "documentation": {}
+    },
+    {
+        "label": "textofinal",
+        "kind": 5,
+        "importPath": "tema2-OperaMat",
+        "description": "tema2-OperaMat",
+        "peekOfCode": "textofinal = texto1 + \" \" + texto2\nprint(textofinal)\nprint(\"El saludo es: %s %s\" %(texto1,texto2))\nsaludofinal = \"Saludo {} {}\".format(texto1,texto2)\nprint(saludofinal)\nsaludofinal2=\"Saludo 2: {y} {x}\".format(x=texto1,y=texto2)\nprint(saludofinal2)",
+        "detail": "tema2-OperaMat",
+        "documentation": {}
+    },
+    {
+        "label": "saludofinal",
+        "kind": 5,
+        "importPath": "tema2-OperaMat",
+        "description": "tema2-OperaMat",
+        "peekOfCode": "saludofinal = \"Saludo {} {}\".format(texto1,texto2)\nprint(saludofinal)\nsaludofinal2=\"Saludo 2: {y} {x}\".format(x=texto1,y=texto2)\nprint(saludofinal2)",
+        "detail": "tema2-OperaMat",
+        "documentation": {}
+    },
+    {
+        "label": "textoNuevo",
+        "kind": 5,
+        "importPath": "tema3-Funciones1",
+        "description": "tema3-Funciones1",
+        "peekOfCode": "textoNuevo = texto.replace(\"e\",\"3\")\nprint(textoNuevo)",
+        "detail": "tema3-Funciones1",
+        "documentation": {}
+    },
+    {
+        "label": "a,b,c",
+        "kind": 5,
+        "importPath": "tema4-Tuplas",
+        "description": "tema4-Tuplas",
+        "peekOfCode": "a,b,c = tupla\nprint(a)\nprint(b)\nprint(c)\ntuplaNueva=tupla+tuplasVariosdatos\nprint(tuplaNueva)",
+        "detail": "tema4-Tuplas",
+        "documentation": {}
+    },
+    {
+        "label": "lista3",
+        "kind": 5,
+        "importPath": "tema5-Listas",
+        "description": "tema5-Listas",
+        "peekOfCode": "lista3 = lista1+lista2\nprint(lista3)\nprint(lista2*4)\nlista4=[1,2,5,4,3]\nprint(lista4)\nlista4.sort()\nprint(lista4)\ndel lista4[0]\nprint(lista4)",
+        "detail": "tema5-Listas",
+        "documentation": {}
+    },
+    {
+        "label": "miDiccionario[\"Nombre\"]",
+        "kind": 5,
+        "importPath": "tema6-Diccionarios",
+        "description": "tema6-Diccionarios",
+        "peekOfCode": "miDiccionario[\"Nombre\"] =  \"Nadia\"\nprint(miDiccionario);\nmiDiccionario[\"correo\"]=\"naida@gmail.com\"\nprint(miDiccionario)",
+        "detail": "tema6-Diccionarios",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "tema7-LeerDatos",
+        "description": "tema7-LeerDatos",
+        "peekOfCode": "num1 = int(input(\"Inserte valor de n1\"))\nnum2 = int(input(\"Inserte valor de n2\"))\nprint(\"La suma de {} + {} = {}\".format(num1, num2,num1+num2))",
+        "detail": "tema7-LeerDatos",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "tema7-LeerDatos",
+        "description": "tema7-LeerDatos",
+        "peekOfCode": "num2 = int(input(\"Inserte valor de n2\"))\nprint(\"La suma de {} + {} = {}\".format(num1, num2,num1+num2))",
+        "detail": "tema7-LeerDatos",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "tema8-ifelse",
+        "description": "tema8-ifelse",
+        "peekOfCode": "num1 = int(input(\"Inserte valor de n1\"))\nnum2 = int(input(\"Inserte valor de n2\"))\nif num1 > num2 :\n    print(\"El {} es mayor que el {}\".format(num1,num1))\nelse:\n    print(\"El {} es mayor que el {}\".format(num2,num1))\nprint(\"--------------dame una edad---------------\")\nedad = int(input(\"ingresa tu edad\"))\nif edad > 18:\n    print(\"Eres mayor de edad\")",
+        "detail": "tema8-ifelse",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "tema8-ifelse",
+        "description": "tema8-ifelse",
+        "peekOfCode": "num2 = int(input(\"Inserte valor de n2\"))\nif num1 > num2 :\n    print(\"El {} es mayor que el {}\".format(num1,num1))\nelse:\n    print(\"El {} es mayor que el {}\".format(num2,num1))\nprint(\"--------------dame una edad---------------\")\nedad = int(input(\"ingresa tu edad\"))\nif edad > 18:\n    print(\"Eres mayor de edad\")\nelif edad == 18:",
+        "detail": "tema8-ifelse",
+        "documentation": {}
+    },
+    {
+        "label": "edad",
+        "kind": 5,
+        "importPath": "tema8-ifelse",
+        "description": "tema8-ifelse",
+        "peekOfCode": "edad = int(input(\"ingresa tu edad\"))\nif edad > 18:\n    print(\"Eres mayor de edad\")\nelif edad == 18:\n    print(\"tienes 18\")\nelse:\n    print(\"Eres menor de edad\")",
+        "detail": "tema8-ifelse",
+        "documentation": {}
+    },
+    {
+        "label": "suma",
+        "kind": 2,
+        "importPath": "tema9-funciones",
+        "description": "tema9-funciones",
+        "peekOfCode": "def suma():\n    return 3+4\nx = suma()\nprint(x)",
+        "detail": "tema9-funciones",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "tema9-funciones",
+        "description": "tema9-funciones",
+        "peekOfCode": "x = suma()\nprint(x)",
+        "detail": "tema9-funciones",
+        "documentation": {}
+    }
+]
