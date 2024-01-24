@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<form action="/resOpBas" method="POST">
+
+    <label for="1">Suma</label>
+    <input type="radio" name="radioOp" id="1" value="Suma">
+    <label for="2">Resta</label>
+    <input type="radio" name="radioOp" id="2" value="Resta">
+    <label for="3">Multiplicacion</label>
+    <input type="radio" name="radioOp" id="3" value="Multiplicacion">
+    <label for="4">Division</label>
+    <input type="radio" name="radioOp" id="4" value="Division">
+<br>
+    <label>N1</label>
+    <input type="text" name="n1"/><br>
+    <label>N2</label>
+    <input type="text" name="n2"/><br>
+    <input type="submit"/>
+    </form>
+{% endblock content %}
