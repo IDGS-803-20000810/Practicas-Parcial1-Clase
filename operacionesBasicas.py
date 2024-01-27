@@ -29,8 +29,8 @@ def resOpBas():
         
         return "<h1>El resultado es {}</h1>".format(str(res))
         
-        # return "<h1>opreacion es {}</h1>".format(str(int(num1)*int(num2)))
     return 
+
 
 
 if __name__=="__main__":
