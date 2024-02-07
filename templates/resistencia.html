@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  {% import '_macros.html' as macros %}
+
+  <style>
+    .Negro {
+      background-color: black;
+    }
+    .Cafe {
+      background-color: brown;
+    }
+    .Rojo {
+      background-color: red;
+    }
+    .Naranja {
+      background-color: orange;
+    }
+    .Amarillo {
+      background-color: yellow;
+    }
+    .Verde {
+      background-color: green;
+    }
+    .Azul {
+      background-color: blue;
+    }
+    .Violeta {
+      background-color: violet;
+    }
+    .Gris {
+      background-color: gray;
+    }
+    .Blanco {
+      background-color: white;
+    }
+    .t5{
+        background-color: orange;
+    }
+    .t10{
+        background-color: gray;
+    }
+
+  </style>
+
+  <form class="row" action="/" method="post">
+    <div class="span4">{{ macros.render_field(form.color1) }}</div>
+    <div class="span4">{{ macros.render_field(form.color2) }}</div>
+
+    <div class="span4">{{ macros.render_field(form.color3) }}</div>
+    {{ macros.render_field(form.tolerancia) }}
+    <input type="submit" name="btnCalcular" value="Calcular" />
+  </form>
+
+  <table class="table">
+    <tr>
+      <th>Color 1</th>
+      <th>Color 2</th>
+      <th>Color 3</th>
+      <th>Tolerancia (%)</th>
+      <th>Resistencia Total</th>
+      <th>Resistencia Mínima</th>
+      <th>Resistencia Máxima</th>
+    </tr>
+    <tr style="color: white; background-color: black;">
+      <td class="{{ color1 }}">{{ color1 }}</td>
+      <td class="{{ color2 }}">{{ color2 }}</td>
+      <td class="{{ color3 }}">{{ color3 }}</td>
+
+      <td class="t{{tolerancia}}">{{ tolerancia }}%</td>
+      <td>{{ resistencia }}</td>
+      <td>{{ minRes }}</td>
+      <td>{{ maxRes }}</td>
+    </tr>
+  </table>
+{% endblock %}
