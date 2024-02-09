@@ -4,7 +4,7 @@ import formResistencia
 
 app=Flask(__name__)
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/resistencia",methods=["GET","POST"])
 def res():
 
     colores = {

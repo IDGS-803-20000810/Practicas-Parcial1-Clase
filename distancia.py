@@ -3,9 +3,9 @@ import formDistancia
 import math 
 app=Flask(__name__)
 
-@app.route("/")
+@app.route("/distancia")
 def index():
-    return render_template("cinepolis.html",nombre="",pagar=0,valido=True)
+    return render_template("distancia.html",nombre="",pagar=0,valido=True)
 
 @app.route("/calcular",methods=["GET","POST"])
 def distancia():
