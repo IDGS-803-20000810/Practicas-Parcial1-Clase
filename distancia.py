@@ -3,11 +3,7 @@ import formDistancia
 import math 
 app=Flask(__name__)
 
-@app.route("/distancia")
-def index():
-    return render_template("distancia.html",nombre="",pagar=0,valido=True)
-
-@app.route("/calcular",methods=["GET","POST"])
+@app.route("/distancia",methods=["GET","POST"])
 def distancia():
     dist_form = formDistancia.DistanciaForm(request.form)    
     distancia = ""
@@ -24,9 +20,6 @@ def distancia():
     
         
     return render_template("distancia.html",form=dist_form,distancia=distancia)
-    
-
-
 
 if __name__=="__main__":
     app.run(debug=True)
