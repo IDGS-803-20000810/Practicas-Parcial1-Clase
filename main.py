@@ -1,15 +1,50 @@
 from flask import Flask, request, render_template
+from io import open
 import formDistancia
 import formResistencia
+import tradForms
 import math 
 
-
 app=Flask(__name__)
-
 
 @app.route("/")
 def index():
     return render_template("main.html")
+
+@app.route("/guardarTrad",methods=["GET","POST"])
+def gTrad():
+    trad_form = tradForms.GuardarTradForm(request.form)
+    mensaje = ""
+    texto=open('diccionario.txt','a')
+    if request.method=='POST'and trad_form.validate():
+        ing=trad_form.ing.data
+        esp=trad_form.esp.data
+        texto.write("{}:{}\n".format(ing.lower(),esp.lower()))
+        texto.close()
+        mensaje = "Guardado!"
+    return render_template("guardarTradForm.html", trad_form=trad_form, mensaje=mensaje)
+
+@app.route("/traducir",methods=["GET","POST"])
+def trad():
+    trad_form = tradForms.TradForm(request.form)
+    resultado="No se encontró traducción"
+    
+    if request.method=='POST'and trad_form.validate():
+        
+        texto=open('diccionario.txt','r')
+        palabra=trad_form.palabra.data
+        
+        idioma=trad_form.idioma.data
+        
+        if idioma=="ingles":
+            idiomaDestino=1
+        elif idioma=="espanol":
+            idiomaDestino=0
+        for line in texto.readlines():
+            if( palabra.lower() in line):
+                resultado=line.split(":")[idiomaDestino]
+        texto.close()
+    return render_template("traduccion.html", trad_form=trad_form,res=resultado)
 
 @app.route("/formOpBas")
 def formOpBas():
@@ -34,6 +69,8 @@ def resOpBas():
         return "<h1>El resultado es {}</h1>".format(str(res))
         
     return 
+
+
 
 @app.route("/distancia",methods=["GET","POST"])
 def calculaar():

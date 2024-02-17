@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  {% import '_macros.html' as macros %}
+
+  <form action="/traducir" method="post">
+    {{macros.render_field(trad_form.palabra)}}
+    {{macros.render_field(trad_form.idioma)}}
+    <input type="submit" value="Traducir" name="btn1">
+    <h2>La traduccion es: {{res}}</h2 >
+    </form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  {% import '_macros.html' as macros %}
+
+  <div class="container">
+    <h1>Guardar definicion</h1>
+  
+    <form class="form-group" action="/guardarTrad" method="POST">
+      {{ macros.render_field(trad_form.esp,class = 'form-control') }}
+      {{ macros.render_field(trad_form.ing,class = 'form-control') }}
+      <input type="submit" class="submit form-control" name="btn1" value="Guardar" />
+    </form>
+  
+    <p>{{ mensaje }}</p>
+  </div>
+{% endblock %}
